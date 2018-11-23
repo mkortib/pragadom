@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="12983b5e-37a1-491a-ba9d-8edf8584bc09" name="pragadom" url="http://pragadom.com.ua">
+        <fileTransfer host="pragadom.com.ua" port="21" rootFolder="/www/pragadom.com.ua">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

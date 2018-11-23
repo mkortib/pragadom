@@ -1,0 +1,109 @@
+/*
+CSS Name: Default Styles
+Description: NextGEN Default Gallery Stylesheet
+Author: Imagely
+Version: 2.13
+
+This stylesheet is provided to allow users the ability of overriding the default styles for all display types
+*/
+
+.ngg-galleryoverview {
+  max-width: 1425px;
+  margin: 25px auto 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.ngg-gallery-thumbnail-box {
+  margin: 55px 25px;
+}
+
+.ngg-gallery-thumbnail {
+  border: none;
+  margin: 0;
+  position: relative;
+}
+
+.ngg-gallery-thumbnail::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  z-index: -1;
+  height: 65%;
+  width: calc(100% + 12px);
+  border: 1px solid #f0c7c1;
+}
+
+.ngg-gallery-thumbnail a {
+  margin: 0;
+}
+
+.post-cnt-txt .ngg-gallery-thumbnail-box {
+  margin: 15px 22px;
+}
+
+.post-cnt-txt .ngg-gallery-thumbnail {
+   max-width: 300px !important;
+}
+
+@media screen and (min-device-width: 1025px) and (max-device-width: 1420px) {
+  .ngg-galleryoverview {
+    max-width: 1275px;  
+  }
+
+  .ngg-gallery-thumbnail {
+    max-width: 375px!important;
+  }
+
+  .ngg-gallery-thumbnail-box {
+    margin: 50px 25px;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .ngg-galleryoverview {
+    max-width: 950px;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .ngg-galleryoverview {
+    max-width: 710px;
+    margin: 0 auto 45px;
+  }
+
+  .ngg-gallery-thumbnail-box {
+    margin: 40px 20px;
+  }
+
+  .ngg-gallery-thumbnail {
+    max-width: 315px!important;
+  }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .ngg-galleryoverview {
+    max-width: 100%;
+    margin: 0 0 60px 8px;
+  }
+
+  .ngg-gallery-thumbnail-box {
+    margin: 40px auto;
+    float: none;
+  }
+
+  .ngg-gallery-thumbnail {
+    max-width: 300px!important;
+    margin: 0 auto;
+  }
+
+  .ngg-gallery-thumbnail::after {
+    width: calc(100% + 10px);
+  }
+}
+
